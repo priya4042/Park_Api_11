@@ -1,0 +1,30 @@
+﻿<div class="row border rounded">
+    <div class="col-9 p-2">
+        <h2 class="text-primary">Trail List</h2>
+    </div>
+    <div class="col-3 p-2">
+        <a asp-action="Upsert" class="btn btn-info form-control"><i class="fas fa-plus"></i>&nbsp;New Trail</a>
+
+    </div>
+</div>
+
+<div class="border">
+    <table id="tblData" class="table table-bordered table-striped table-success table-active">
+        <thead>
+            <tr>
+                <th>NationalPark</th>
+                <th>Trail Name</th>
+                <th>Distance</th>
+                <th>Elevation</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+@section scripts
+{
+    <script src="~/js/Trail.js"></script>
+}
+
+
+
